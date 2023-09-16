@@ -3,30 +3,36 @@
 /**
  * times_table - A function that prints the 9 times table
  *
- * Return: always 0
+ * Return: 0
  */
 
 void times_table(void)
 {
-	int i, k;
+	int a, b, c;
 
-	for (i = 0; i < 9; i++)
+	for (a = 0; a < 10; a++)
 	{
-		k = i * 9;
-		if (i != 0)
+		for (b = 0; b < 10; b++)
 		{
-			_putchar(',');
-		        _putchar(' ');
-			if (k < 10)
+			c = a * b;
+			if (b == 0)
+				_putchar(c + '0');
+			else if (c < 10 && b != 0)
 			{
+				_putchar(',');
 				_putchar(' ');
+				_putchar(' ');
+				_putchar(c + '0');
+			}
+			else if (c >= 10)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(c / 10 + '0');
+				_putchar(c % 10 + '0');
 			}
 		}
-		if (k >= 10)
-		{
-			_putchar((k / 10) + '0');
-		}
-			_putchar((k % 10) + '0');
-	}
 		_putchar('\n');
+	}
 }
