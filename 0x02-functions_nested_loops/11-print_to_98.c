@@ -1,33 +1,36 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_to_98 - A function that prints natural numbers
  *
+ * @n: number to be checked
  * Return: always 0
  */
 
 
 void print_to_98(int n)
 {
-	if (n < 98)
+	int i, j;
+
+	if (n <= 98)
 	{
-		int i;
 		for (i = n; i <= 98; i++)
 		{
-			_putchar(n + '0');
-			_putchar(',');
-			_putchar(' ');
+			if (i != 98)
+				printf("%d, ", i);
+			else if (i == 98)
+				printf("%d\n", i);
 		}
 	}
-	else if (n > 98)
+	else if (n >= 98)
 	{
-		for (i = n; i >= 98; i--)
+		for (j = n; j >= 98; j--)
 		{
-			 _putchar(i + '0');
-			 _putchar(',');
-		         _putchar(' ');
+			if (j != 98)
+				printf("%d, ", j);
+			else if (j == 98)
+				printf("%d\n", j);
 		}
 	}
-	_putchar('\n');
-
-		
+}
