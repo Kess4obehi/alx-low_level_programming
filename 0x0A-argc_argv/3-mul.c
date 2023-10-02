@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * main A program that multiplies two numbers.
+ * main - A program that multiplies two numbers.
  * @argc: displays the number of arguments
  * @argv: displays the arrays of arguments
  * Return: 0
@@ -19,4 +19,4 @@ int main(int argc, char *argv[])
 	else
 		printf("Error\n");
 	return (1);
-}	
+}
