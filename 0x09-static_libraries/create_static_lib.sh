@@ -1,3 +1,3 @@
-#!bin/bash
-gcc -c -wall -werror -wextra -pedantic -std=gnu89 *.c
-ar -rcs liball.a *.o
+#!/bin/bash
+gcc -c *.c
+ar -rc liball.a *.o
