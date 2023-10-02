@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include "main.h"
 
+/**
+ * main - A program that multiplies two numbers.
+ * @argc: display number of arguments
+ * @argv: display the arrays of arguments
+ * Return: 0
+ */
+
 
 int main(int argc, char *argv[])
 {
