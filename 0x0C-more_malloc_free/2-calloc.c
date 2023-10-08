@@ -27,7 +27,7 @@ char *_elementset(char *p, char c, unsigned int n)
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *ptr;
+	char *ptr;
 
 	ptr = malloc(nmemb * size);
 
