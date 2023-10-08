@@ -3,7 +3,11 @@
 
 /**
  * *_elementset - fills memory with a constant byte
- * @p: 
+ * @p: memory area to be filled
+ * @c: char to copy
+ * @n: number of time to copy c
+ * Return: 0
+ */
 
 char *_elementset(char *p, char c, unsigned int n)
 {
